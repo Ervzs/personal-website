@@ -31,12 +31,7 @@
   	align-items: flex-start;
   	gap: 8px;
 }
-.title {
-  	align-self: stretch;
-  	position: relative;
-  	letter-spacing: -0.03em;
-  	line-height: 120%;
-}
+
 .aspiring {
   	margin: 0;
 }
