@@ -1,0 +1,286 @@
+/* Education Page Specific Styles */
+
+/* Main container */
+.education-main {
+  width: 100%;
+  min-height: calc(100vh - 200px);
+  padding: 60px 40px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.education-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Header section */
+.education-header {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.education-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000000;
+  font-family: Inter;
+  margin: 0 0 20px 0;
+}
+
+.education-subtitle {
+  font-size: 20px;
+  color: #757575;
+  font-family: Inter;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Timeline Section */
+.timeline-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.timeline-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  max-width: 600px;
+  width: 100%;
+}
+
+.timeline-item {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 280px;
+}
+
+.education-details {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.institution-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  font-family: Inter;
+  margin: 5px 0;
+}
+
+.degree-program {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4a90e2;
+  font-family: Inter;
+  margin: 3px 0;
+}
+
+.education-period {
+  font-size: 12px;
+  color: #757575;
+  font-family: Inter;
+  margin: 3px 0;
+}
+
+.education-description {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #424242;
+  font-family: Inter;
+  margin: 8px 0 0 0;
+}
+
+.timeline-image-placeholder {
+  width: 140px;
+  height: 150px;
+  border: 2px solid #d9d9d9;
+  border-radius: 8px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-icon {
+  font-size: 24px;
+  opacity: 0.5;
+}
+
+.timeline-year {
+  text-align: center;
+}
+
+.timeline-year p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a90e2;
+  font-family: Inter;
+}
+
+.timeline-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 80px;
+  position: relative;
+}
+
+.timeline-line {
+  width: 100%;
+  height: 2px;
+  background-color: #d9d9d9;
+}
+
+.timeline-dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #4a90e2;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .education-main {
+    padding: 40px 30px;
+  }
+
+  .education-title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .education-main {
+    padding: 30px 20px;
+  }
+
+  .education-title {
+    font-size: 32px;
+  }
+
+  .education-subtitle {
+    font-size: 18px;
+  }
+
+  .timeline-container {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .timeline-connector {
+    width: 2px;
+    height: 40px;
+    min-width: auto;
+    flex-direction: column;
+  }
+
+  .timeline-line {
+    width: 2px;
+    height: 100%;
+  }
+
+  .timeline-image-placeholder {
+    width: 120px;
+    height: 80px;
+  }
+
+  .timeline-item {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .education-main {
+    padding: 20px 15px;
+  }
+
+  .education-title {
+    font-size: 28px;
+  }
+
+  .education-subtitle {
+    font-size: 16px;
+  }
+
+  .timeline-image-placeholder {
+    width: 100px;
+    height: 70px;
+  }
+
+  .timeline-item {
+    max-width: 200px;
+  }
+
+  .institution-name {
+    font-size: 14px;
+  }
+
+  .degree-program {
+    font-size: 12px;
+  }
+
+  .education-description {
+    font-size: 12px;
+  }
+}
+
+/* Animation */
+.timeline-section {
+  animation: fadeInUp 0.6s ease-out 0.3s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effects */
+.timeline-image-placeholder:hover {
+  border-color: #4a90e2;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.15);
+  transition: all 0.3s ease;
+}
+
+.timeline-dot {
+  transition: all 0.3s ease;
+}
+
+.timeline-container:hover .timeline-dot {
+  background-color: #357abd;
+  transform: scale(1.2);
+}

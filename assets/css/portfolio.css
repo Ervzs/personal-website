@@ -1,0 +1,146 @@
+.portfolio {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.3);
+  font-family: "Playfair Display";
+}
+.portfolio-inner {
+  position: absolute;
+  top: 258px;
+  left: 72px;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-parent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+.card {
+  width: 405.3px;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 32px;
+  box-sizing: border-box;
+  gap: 16px;
+}
+.text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  font-size: 32px;
+  font-family: Lato;
+}
+.div {
+  position: relative;
+  font-weight: 500;
+}
+.fashion-app {
+  align-self: stretch;
+  position: relative;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  height: 38px;
+  flex-shrink: 0;
+}
+.card-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.type {
+  border-radius: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 16px;
+}
+.ui-ux-designer {
+  position: relative;
+}
+.image-599-icon {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.secondary-button {
+  border-radius: 32px;
+  background-color: #131212;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 16px;
+  color: #fff;
+}
+.image {
+  align-self: stretch;
+  position: relative;
+  border-radius: 12px;
+  height: 345px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.portfolio-child {
+  position: absolute;
+  top: calc(50% - 373px);
+  left: calc(50% - 661px);
+  width: 1322px;
+  height: 119px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #333;
+}
+.frame-parent {
+  width: 1278px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+}
+.line-parent {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.frame-child {
+  width: 34px;
+  position: relative;
+  border-top: 2px solid #333;
+  box-sizing: border-box;
+  height: 2px;
+}
+.projects-and-practice {
+  width: 531px;
+  position: relative;
+  font-size: 48px;
+  display: inline-block;
+}
