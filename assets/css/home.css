@@ -1,54 +1,198 @@
-
-
 .hero-actions {
-  	width: 100%;
-  	position: relative;
-  	background-color: #fff;
-  	height: 806px;
-  	text-align: left;
-  	font-size: 72px;
-  	color: #1e1e1e;
-  	font-family: Inter;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 806px;
+  text-align: left;
+  font-size: 72px;
+  color: #1e1e1e;
+  font-family: Inter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  box-sizing: border-box;
 }
 .formal-picture-1 {
-  	position: absolute;
-  	top: 120px;
-  	left: 210px;
-  	border-radius: 29px;
-  	width: 389px;
-  	height: 518px;
-  	object-fit: cover;
-    object-position: center 20%;
+  border-radius: 29px;
+  width: 389px;
+  height: 518px;
+  object-fit: cover;
+  object-position: center 20%;
+  flex-shrink: 0;
+  margin-right: 50px;
+  animation: slideInLeft 1s ease-out forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formal-picture-1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 .text-content-title {
-  	position: absolute;
-  	top: 200px;
-  	left: 650px;
-  	width: 702px;
-  	height: 198px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	gap: 8px;
+  max-width: 702px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1;
+  animation: slideInRight 1s ease-out forwards;
+}
+
+.title {
+  transition: transform 0.3s ease;
+}
+
+.title:hover {
+  transform: scale(1.02);
 }
 
 .aspiring {
-  	margin: 0;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.aspiring:hover {
+  color: #4a90e2;
+  text-shadow: 0 2px 4px rgba(74, 144, 226, 0.3);
 }
 .subtitle {
-  	width: 777px;
-  	position: relative;
-  	font-size: 20px;
-  	line-height: 120%;
-  	color: #757575;
-  	text-align: right;
-  	display: flex;
-  	align-items: center;
-  	height: 79px;
-  	flex-shrink: 0;
+  max-width: 777px;
+  position: relative;
+  font-size: 20px;
+  line-height: 120%;
+  color: #757575;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  min-height: 79px;
+  flex-shrink: 0;
+  transition: color 0.3s ease;
 }
 
+.subtitle:hover {
+  color: #424242;
+}
 
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .hero-actions {
+    padding: 0 30px;
+  }
 
+  .formal-picture-1 {
+    width: 320px;
+    height: 426px;
+    margin-right: 40px;
+  }
 
+  .text-content-title {
+    max-width: 600px;
+  }
 
+  .hero-actions {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-actions {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    height: auto;
+    min-height: 600px;
+  }
+
+  .formal-picture-1 {
+    width: 280px;
+    height: 373px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .text-content-title {
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+
+  .hero-actions {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-actions {
+    padding: 30px 15px;
+    font-size: 36px;
+  }
+
+  .formal-picture-1 {
+    width: 240px;
+    height: 320px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Removed problematic hover animations that were causing bugs */
