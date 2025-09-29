@@ -40,6 +40,10 @@
   font-weight: 400;
 }
 
+.highlight-text:hover {
+  color: #3178c9;
+}
+
 .description-container {
   display: flex;
   flex-direction: column;
