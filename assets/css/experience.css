@@ -67,7 +67,7 @@ b {
 
 .card:hover {
   border-color: #4a90e2;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 50px rgba(6, 118, 247, 0.5);
   transform: translateY(-2px);
 }
 .image-icon {
