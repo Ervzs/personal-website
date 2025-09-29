@@ -49,14 +49,16 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 50px;
+  padding: 10px;
 }
 
 .timeline-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 0;
-  max-width: 600px;
+  max-width: 1000px;
   width: 100%;
 }
 
@@ -75,7 +77,7 @@
 }
 
 .institution-name {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
   color: #000000;
   font-family: Inter;
@@ -83,7 +85,7 @@
 }
 
 .degree-program {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
   color: #4a90e2;
   font-family: Inter;
@@ -91,14 +93,14 @@
 }
 
 .education-period {
-  font-size: 12px;
+  font-size: 18px;
   color: #757575;
   font-family: Inter;
   margin: 3px 0;
 }
 
 .education-description {
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.4;
   color: #424242;
   font-family: Inter;
@@ -136,7 +138,7 @@
 
 .timeline-year p {
   margin: 0;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 600;
   color: #4a90e2;
   font-family: Inter;
@@ -149,6 +151,7 @@
   flex: 1;
   min-width: 80px;
   position: relative;
+  margin-top: 75px;
 }
 
 .timeline-line {
@@ -241,15 +244,19 @@
   }
 
   .institution-name {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .degree-program {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   .education-description {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  .education-period {
+    font-size: 16px;
   }
 }
 
