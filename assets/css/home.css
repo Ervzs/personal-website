@@ -27,7 +27,7 @@
 
 .formal-picture-1:hover {
   transform: scale(1.05);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 90px rgba(6, 118, 247, 0.7);
 }
 .text-content-title {
   max-width: 702px;
