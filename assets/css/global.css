@@ -120,4 +120,12 @@ footer {
 body {
   margin: 0;
   line-height: normal;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content,
+.certification-main {
+  flex-grow: 1;
 }
