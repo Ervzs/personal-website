@@ -29,19 +29,16 @@ class DarkModeToggle {
       toggleButton.innerHTML = this.darkMode ? "☀️ Light" : "🌙 Dark";
       toggleButton.style.cssText = `
                 position: fixed;
-                top: 20px;
-                right: 20px;
-                z-index: 1000;
+                bottom: 0px;
+                left: 0px;
+                margin-bottom: 20px;
+                margin-left: 25px;
                 padding: 10px 15px;
-                border: none;
+                border: #98b9ffff solid;
                 border-radius: 25px;
-                background: ${this.darkMode ? "#404040" : "#f0f0f0"};
-                color: ${this.darkMode ? "#fff" : "#333"};
                 cursor: pointer;
                 font-family: Inter, sans-serif;
                 font-size: 14px;
-                font-weight: 500;
-                transition: all 0.3s ease;
                 box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             `;
 
