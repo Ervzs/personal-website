@@ -183,6 +183,10 @@ class DarkModeToggle {
                 }
 
                 /* Education Page Dark Mode */
+                main.dark-mode, main.education-main{
+                    background-color: #2d2d2d !important;
+                }
+
                 body.dark-mode .degree-program, .timeline-year p{
                     color: #6ba3f5 !important;
                 }

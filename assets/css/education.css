@@ -21,7 +21,8 @@
 .education-header {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  align-items: center;
+  text-align: center;
   margin-bottom: 0px;
 }
 
