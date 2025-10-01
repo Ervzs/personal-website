@@ -96,11 +96,11 @@ class DarkModeToggle {
     const darkModeCSS = `
             <style id="darkModeStyles">
                 /* Global Dark Mode Styles */
-                h1{
+                h1, h3, p, a, b, .info, .description{
                     color: #e0e0e0 !important;
                 }
 
-                main{
+                main.dark-mode {
                     background-color: #1a1a1a !important;
                 }
 
@@ -113,19 +113,6 @@ class DarkModeToggle {
                 body.dark-mode header {
                     background-color: #2d2d2d !important;
                     border-bottom-color: #404040 !important;
-                    color: #b0b0b0 !important;
-                }
-
-                body.dark-mode .title {
-                    color: #ffffff !important;
-                }
-
-                body.dark-mode .description {
-                    color: #888888 !important;
-                }
-
-                body.dark-mode .header-title {
-                    color: #e0e0e0 !important;
                 }
 
 
@@ -133,11 +120,10 @@ class DarkModeToggle {
                 body.dark-mode footer {
                     background-color: #2d2d2d !important;
                     border-top-color: #404040 !important;
-                    color: #e0e0e0 !important;
                 }
 
                 body.dark-mode .all-rights-reserved {
-                    color: #b0b0b0 !important;
+                    color: #e7e4e4ff !important;
                 }
 
                 /* Home Page Dark Mode */
@@ -150,10 +136,6 @@ class DarkModeToggle {
                     color: #b0b0b0 !important;
                 }
 
-                body.dark-mode .subtitle:hover {
-                    color: #d0d0d0 !important;
-                }
-
                 body.dark-mode .aspiring:hover {
                     color: #6ba3f5 !important;
                     text-shadow: 0 2px 4px rgba(107, 163, 245, 0.3) !important;
@@ -163,31 +145,10 @@ class DarkModeToggle {
                     box-shadow: 0 20px 85px rgba(107, 163, 245, 0.5) !important;
                 }
 
-                /* About Page Dark Mode */
-                body.dark-mode .about-main {
-                    background-color: #1a1a1a !important;
-                }
-
-                body.dark-mode .main-heading {
-                    color: #ffffff !important;
-                }
-
-                body.dark-mode .highlight-text {
-                    color: #b0b0b0 !important;
-                }
-
-                body.dark-mode .highlight-text:hover {
-                    color: #6ba3f5 !important;
-                }
-
-                body.dark-mode .description-text {
-                    color: #d0d0d0 !important;
-                }
-
+                
                 /* Experience Page Dark Mode */
                 body.dark-mode .card-grid-content-list {
                     background-color: #1a1a1a !important;
-                    color: #e0e0e0 !important;
                 }
 
                 body.dark-mode .heading {
@@ -222,33 +183,10 @@ class DarkModeToggle {
                 }
 
                 /* Education Page Dark Mode */
-                body.dark-mode .education-main {
-                    background-color: #1a1a1a !important;
-                }
-
-                body.dark-mode .education-title {
-                    color: #ffffff !important;
-                }
-
-                body.dark-mode .education-subtitle {
-                    color: #b0b0b0 !important;
-                }
-
-                body.dark-mode .institution-name {
-                    color: #ffffff !important;
-                }
-
-                body.dark-mode .degree-program {
+                body.dark-mode .degree-program, .timeline-year p{
                     color: #6ba3f5 !important;
                 }
 
-                body.dark-mode .education-period {
-                    color: #b0b0b0 !important;
-                }
-
-                body.dark-mode .education-description {
-                    color: #d0d0d0 !important;
-                }
 
                 body.dark-mode .timeline-image-placeholder {
                     background-color: #2d2d2d !important;
@@ -263,27 +201,11 @@ class DarkModeToggle {
                 body.dark-mode .timeline-line {
                     background-color: #404040 !important;
                 }
-
-                body.dark-mode .timeline-dot {
-                    background-color: #6ba3f5 !important;
-                }
-
-                body.dark-mode .timeline-container:hover .timeline-dot {
-                    background-color: #5a9cec !important;
-                }
-
-                body.dark-mode .timeline-year p {
-                    color: #6ba3f5 !important;
-                }
+                
 
                 /* Skills Page Dark Mode */
                 body.dark-mode .skills {
                     background-color: #1a1a1a !important;
-                    color: #b0b0b0 !important;
-                }
-
-                body.dark-mode .skill-title-description {
-                    color: #ffffff !important;
                 }
 
                 body.dark-mode .skills-logo {
@@ -295,13 +217,12 @@ class DarkModeToggle {
                     box-shadow: 0 15px 50px rgba(107, 163, 245, 0.2) !important;
                 }
 
-                body.dark-mode .frame-child {
-                    border-top-color: #e0e0e0 !important;
+                /* Certification Page Dark Mode */
+
+                main.dark-mode, main.certification-main{
+                background-color: #1a1a1a !important;
                 }
 
-                body.dark-mode .skill-title {
-                    color: #e0e0e0 !important;
-                }
 
                 /* Portfolio Page Dark Mode */
                 body.dark-mode .portfolio {
