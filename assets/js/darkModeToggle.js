@@ -96,6 +96,14 @@ class DarkModeToggle {
     const darkModeCSS = `
             <style id="darkModeStyles">
                 /* Global Dark Mode Styles */
+                h1{
+                    color: #e0e0e0 !important;
+                }
+
+                main{
+                    background-color: #1a1a1a !important;
+                }
+
                 body.dark-mode {
                     background-color: #1a1a1a !important;
                     color: #e0e0e0 !important;
@@ -120,9 +128,6 @@ class DarkModeToggle {
                     color: #e0e0e0 !important;
                 }
 
-                body.dark-mode .header-navigation-pill:hover {
-                    background-color: #404040 !important;
-                }
 
                 /* Footer Dark Mode */
                 body.dark-mode footer {
