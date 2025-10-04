@@ -4,7 +4,7 @@
 
 class DarkModeToggle {
   constructor() {
-    this.darkMode = false;
+    this.darkMode = true;
     this.init();
   }
 
@@ -79,14 +79,37 @@ class DarkModeToggle {
     localStorage.setItem("darkMode", this.darkMode.toString());
   }
 
+  updateFooterIcons() {
+    // GitHub
+    const githubIcon = document.querySelector(
+      'footer .x-logo-icon[alt="Github"]'
+    );
+    if (githubIcon) {
+      githubIcon.src = this.darkMode
+        ? "./assets/images/logo/github.png"
+        : "./assets/images/logo/github-black.png";
+    }
+    // LinkedIn
+    const linkedinIcon = document.querySelector(
+      'footer .x-logo-icon[alt="Linkedin"]'
+    );
+    if (linkedinIcon) {
+      linkedinIcon.src = this.darkMode
+        ? "./assets/images/logo/linkedin.png"
+        : "./assets/images/logo/linkedin-black.png";
+    }
+  }
+
   applyDarkMode() {
     this.injectDarkModeCSS();
     document.body.classList.add("dark-mode");
+    this.updateFooterIcons();
   }
 
   applyLightMode() {
     this.removeDarkModeCSS();
     document.body.classList.remove("dark-mode");
+    this.updateFooterIcons();
   }
 
   injectDarkModeCSS() {
