@@ -227,6 +227,23 @@ class DarkModeToggle {
                 background-color: #1a1a1a !important;
                 }
 
+                /* Advocacy Page Dark Mode */
+                body.dark-mode .advocacy-main {
+                    background-color: #1a1a1a !important;
+                }
+
+                body.dark-mode .advocacy-title {
+                    color: #e0e0e0 !important;
+                }
+
+                body.dark-mode .advocacy-title:hover {
+                    color: #6ba3f5 !important;
+                }
+
+                body.dark-mode .advocacy-text {
+                    color: #b0b0b0 !important;
+                }
+
 
                 /* Portfolio Page Dark Mode */
                 body.dark-mode .portfolio {
