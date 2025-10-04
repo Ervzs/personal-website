@@ -86,8 +86,8 @@ class DarkModeToggle {
     );
     if (githubIcon) {
       githubIcon.src = this.darkMode
-        ? "./assets/images/logo/github-black.png"
-        : "./assets/images/logo/github.png";
+        ? "./assets/images/logo/github.png"
+        : "./assets/images/logo/github-black.png";
     }
     // LinkedIn
     const linkedinIcon = document.querySelector(
@@ -95,8 +95,8 @@ class DarkModeToggle {
     );
     if (linkedinIcon) {
       linkedinIcon.src = this.darkMode
-        ? "./assets/images/logo/linkedin-black.png"
-        : "./assets/images/logo/linkedin.png";
+        ? "./assets/images/logo/linkedin.png"
+        : "./assets/images/logo/linkedin-black.png";
     }
   }
 
