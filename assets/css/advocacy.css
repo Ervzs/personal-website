@@ -21,10 +21,16 @@
 .advocacy-left {
   flex: 1;
   max-width: 750px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUpAdvocacy 0.8s ease-out forwards;
 }
 
 .advocacy-right {
   flex: 0 0 300px;
+  opacity: 0;
+  transform: translateX(40px);
+  animation: fadeInRightAdvocacy 1s 0.2s ease-out forwards;
 }
 
 .advocacy-title {
@@ -60,6 +66,28 @@
 
 .advocacy-image:hover {
   transform: scale(1.02);
+}
+
+@keyframes fadeInUpAdvocacy {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRightAdvocacy {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Responsive Design */
