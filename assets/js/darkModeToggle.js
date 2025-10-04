@@ -4,7 +4,7 @@
 
 class DarkModeToggle {
   constructor() {
-    this.darkMode = true;
+    this.darkMode = false;
     this.init();
   }
 
