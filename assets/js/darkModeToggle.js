@@ -168,6 +168,25 @@ class DarkModeToggle {
                     box-shadow: 0 20px 85px rgba(107, 163, 245, 0.5) !important;
                 }
 
+                body.dark-mode .contact-button {
+    background-color: #6ba3f5 !important;
+    color: #1a1a1a !important;
+    box-shadow: 0 4px 15px rgba(107, 163, 245, 0.3) !important;
+}
+
+body.dark-mode .contact-button:hover {
+    background-color: #5a94f0 !important;
+    box-shadow: 0 8px 25px rgba(107, 163, 245, 0.5) !important;
+}
+
+body.dark-mode .contact-button:active {
+    box-shadow: 0 4px 15px rgba(107, 163, 245, 0.4) !important;
+}
+
+body.dark-mode .contact-button:focus {
+    outline-color: #6ba3f5 !important;
+}
+
                 
                 /* Experience Page Dark Mode */
                 body.dark-mode .card-grid-content-list {
