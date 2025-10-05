@@ -52,6 +52,10 @@ header {
   line-height: 140%;
   font-weight: 600;
 }
+
+.title:hover {
+  color: #4a90e2;
+}
 .description {
   position: relative;
   line-height: 140%;
@@ -74,6 +78,10 @@ header {
   color: inherit;
   line-height: 100%;
   cursor: pointer;
+}
+
+.header-title:hover {
+  color: #4a90e2;
 }
 .header-navigation-pill {
   border-radius: 8px;
