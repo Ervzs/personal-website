@@ -68,6 +68,20 @@
   font-size: 56px;
   display: inline-block;
 }
+
+@media screen and (max-width: 600px) {
+  .skill-title-description {
+    width: 100%;
+    text-align: center;
+  }
+  .line-parent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .card-of-logo {
   width: 100%;
   max-width: 980px;
