@@ -137,7 +137,14 @@ class DarkModeToggle {
                     background-color: #2d2d2d !important;
                     border-bottom-color: #404040 !important;
                 }
+                
+                body.dark-mode .hamburger{
+                  color: white;
+                }
 
+                body.dark-mode .navigation-pill-list.active .header-title{
+                  color: black !important;
+                }
 
                 /* Footer Dark Mode */
                 body.dark-mode footer {
