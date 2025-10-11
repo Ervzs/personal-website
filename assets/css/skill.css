@@ -2,7 +2,6 @@
   width: 100%;
   position: relative;
   background-color: #fff;
-  /* allow content to determine height */
   min-height: 100vh;
   overflow: hidden;
   display: flex;
@@ -29,7 +28,6 @@
 .skills-section {
   width: 100%;
   max-width: 1280px;
-  /* remove fixed height so content flows naturally */
   min-height: 400px;
   display: flex;
   flex-direction: column;
