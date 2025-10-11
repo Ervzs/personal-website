@@ -52,83 +52,219 @@
       </div>
     </header>
 
-    <body>
-      <div class="portfolio">
-        <div class="portfolio-inner">
-          <div class="card-parent">
-            <div class="card">
-              <div class="text">
-                <div class="div">01</div>
-                <div class="Thesis Project">Portflio</div>
-              </div>
-              <div class="card-container">
-                <div class="type">
-                  <b class="ui-ux-designer">UI-UX Designer</b>
-                </div>
-                <div class="type">
-                  <b class="ui-ux-designer">Product Design</b>
-                </div>
-              </div>
-              <div class="image">
-                <img class="image-599-icon" alt="" />
-              </div>
-              <div class="secondary-button">
-                <b class="ui-ux-designer">View project</b>
-              </div>
-            </div>
-            <div class="card">
-              <div class="text">
-                <div class="div">02</div>
-                <div class="fashion-app">Incremental Game</div>
-              </div>
-              <div class="card-container">
-                <div class="type">
-                  <b class="ui-ux-designer">UI-UX Designer</b>
-                </div>
-                <div class="type">
-                  <b class="ui-ux-designer">Product Design</b>
-                </div>
-              </div>
-              <div class="image">
-                <img class="image-599-icon" alt="" />
-              </div>
-              <div class="secondary-button">
-                <b class="ui-ux-designer">View project</b>
-              </div>
-            </div>
-            <div class="card">
-              <div class="text">
-                <div class="div">03</div>
-                <div class="fashion-app">Budget Tracker Web</div>
-              </div>
-              <div class="card-container">
-                <div class="type">
-                  <b class="ui-ux-designer">UI-UX Designer</b>
-                </div>
-                <div class="type">
-                  <b class="ui-ux-designer">Product Design</b>
-                </div>
-              </div>
-              <div class="image">
-                <img class="image-599-icon" alt="" />
-              </div>
-              <div class="secondary-button">
-                <b class="ui-ux-designer">View project</b>
-              </div>
+    <main class="portfolio-main">
+      <div class="portfolio-header">
+        <h1 class="portfolio-title">Portfolio</h1>
+        <p class="portfolio-subtitle">
+          A collection of projects I've worked on, showcasing my skills and
+          creativity.
+        </p>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- CS Expo Project -->
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="./assets/images/projects/cs-expo.png"
+              alt="CS Expo Project"
+              loading="lazy"
+            />
+            <div class="project-status">Currently Working On</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">CS Expo</h3>
+            <p class="project-description">
+              Project description placeholder for CS Expo.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">Next.js</span>
+              <span class="tech-item">Typescript</span>
+              <span class="tech-item">ReactBits</span>
             </div>
           </div>
         </div>
-        <div class="portfolio-child">
-          <div class="frame-parent">
-            <div class="line-parent">
-              <div class="frame-child"></div>
-              <b class="ui-ux-designer">Just the layout for now</b>
+
+        <!-- Smarty Ratty Project -->
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="./assets/images/projects/smarty-ratty.png"
+              alt="Smarty Ratty Project"
+              loading="lazy"
+            />
+            <div class="project-status">Currently Working On</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">Smarty Ratty</h3>
+            <p class="project-description">
+              Project description placeholder for Smarty Ratty.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">Python</span>
+              <span class="tech-item">Pygame</span>
+              <span class="tech-item">Numpy</span>
             </div>
-            <b class="projects-and-practice">WORK IN PROGRESS...</b>
+          </div>
+        </div>
+
+        <!-- Ervirus Project -->
+        <a
+          href="https://github.com/placeholder-link"
+          class="project-card project-link"
+          target="_blank"
+        >
+          <div class="project-image">
+            <img
+              src="./assets/images/projects/ervirus.png"
+              alt="Ervirus Project"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">Ervirus</h3>
+            <p class="project-description">
+              Project description placeholder for Ervirus.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">Next.js</span>
+              <span class="tech-item">Typescript</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Memory Game Project -->
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="./assets/images/projects/taskly.png"
+              alt="Memory Game Project"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">Taskly</h3>
+            <p class="project-description">
+              Project description placeholder for Memory Game.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">React</span>
+              <span class="tech-item">Typescript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Memory Game Project -->
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="./assets/images/projects/memory-game.png"
+              alt="Memory Game Project"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">Memory Game</h3>
+            <p class="project-description">
+              Project description placeholder for Memory Game.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">JavaScript</span>
+              <span class="tech-item">HTML</span>
+              <span class="tech-item">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pomodoro Project -->
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="./assets/images/projects/pomodoro.png"
+              alt="Pomodoro Project"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">Pomodoro</h3>
+            <p class="project-description">
+              Project description placeholder for Pomodoro.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">JavaScript</span>
+              <span class="tech-item">HTML</span>
+              <span class="tech-item">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snake Game Project -->
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="./assets/images/projects/snake-game.png"
+              alt="Snake Game Project"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">Snake Game</h3>
+            <p class="project-description">
+              Project description placeholder for Snake Game.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">JavaScript</span>
+              <span class="tech-item">HTML</span>
+              <span class="tech-item">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rock Paper Scissors Project -->
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="./assets/images/projects/rpc.png"
+              alt="Rock Paper Scissors Project"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">Rock Paper Scissors</h3>
+            <p class="project-description">
+              Project description placeholder for Rock Paper Scissors.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">JavaScript</span>
+              <span class="tech-item">HTML</span>
+              <span class="tech-item">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculator Project -->
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="./assets/images/projects/calculator.png"
+              alt="Calculator Project"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">Calculator</h3>
+            <p class="project-description">
+              Project description placeholder for Calculator.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">JavaScript</span>
+              <span class="tech-item">HTML</span>
+              <span class="tech-item">CSS</span>
+            </div>
           </div>
         </div>
       </div>
-    </body>
+    </main>
 
     <footer>
       <div class="all-rights-reserved">© 2025, All Rights Reserved.</div>
@@ -152,6 +288,7 @@
         </a>
       </div>
     </footer>
+
     <script src="./assets/js/darkModeToggle.js"></script>
     <script src="./assets/js/menu.js"></script>
   </body>
