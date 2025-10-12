@@ -186,6 +186,19 @@ class DarkModeToggle {
                     box-shadow: 0 8px 25px rgba(107, 163, 245, 0.5) !important;
                 }
 
+                body.dark-mode .resume-button {
+                    background-color: #2d2d2d !important;
+                    color: #6ba3f5 !important;
+                    border-color: #6ba3f5 !important;
+                    box-shadow: 0 4px 15px rgba(107, 163, 245, 0.2) !important;
+                }
+
+                body.dark-mode .resume-button:hover {
+                    background-color: #6ba3f5 !important;
+                    color: #1a1a1a !important;
+                    box-shadow: 0 8px 25px rgba(107, 163, 245, 0.5) !important;
+                }
+
                 
                 /* Experience Page Dark Mode */
                 body.dark-mode .card-grid-content-list {

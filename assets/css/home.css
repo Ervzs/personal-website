@@ -129,6 +129,10 @@
   .hero-actions {
     font-size: 48px;
   }
+
+  .buttons-container {
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -144,6 +148,17 @@
 
   .subtitle {
     font-size: 18px;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .contact-button,
+  .resume-button {
+    padding: 14px 28px;
+    font-size: 16px;
   }
 }
 
@@ -201,14 +216,23 @@
   }
 }
 
-/* Contact Button Styles */
-.contact-button-container {
+/* Buttons Container */
+.buttons-container {
   margin-top: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 24px;
   width: 100%;
+  flex-wrap: wrap;
   animation: fadeInUp 1.2s ease-out forwards;
+}
+
+/* Contact Button Styles */
+.contact-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-button {
@@ -228,6 +252,36 @@
 
 .contact-button:hover {
   background-color: #3578c7;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(74, 144, 226, 0.4);
+}
+
+/* Resume Button Styles */
+.resume-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-button {
+  display: inline-flex;
+  padding: 16px 32px;
+  background-color: #f8f9fa;
+  color: #4a90e2;
+  text-decoration: none;
+  border-radius: 32px;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid #4a90e2;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.1);
+}
+
+.resume-button:hover {
+  background-color: #4a90e2;
+  color: #ffffff;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(74, 144, 226, 0.4);
 }
