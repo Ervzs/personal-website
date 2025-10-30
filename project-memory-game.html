@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Advocy</title>
+    <title>Memory Game • Project</title>
     <link rel="stylesheet" href="./assets/css/global.css" />
-    <link rel="stylesheet" href="./assets/css/advocacy.css" />
+    <link rel="stylesheet" href="./assets/css/project.css" />
   </head>
   <body>
     <header>
@@ -68,32 +68,55 @@
       </div>
     </header>
 
-    <main class="advocacy-main">
-      <div class="advocacy-content">
-        <div class="advocacy-left">
-          <h1 class="advocacy-title">LESS IS MORE</h1>
-          <p class="advocacy-text">
-            In the world of computer science and technology, simplicity is
-            power. The principle of "Less is More" reminds us that clarity,
-            efficiency, and focus often lead to the best results. In design,
-            minimalism makes interfaces clean, intuitive, and user-friendly. In
-            code, writing less—yet more efficient—lines improves readability,
-            reduces bugs, and ensures scalability. In innovation, simplicity
-            sparks creativity, helping us solve problems without unnecessary
-            complexity. By embracing Less is More, we create technology that is
-            not only functional but also elegant, sustainable, and impactful. My
-            website reflects this belief: minimal in style, but meaningful in
-            purpose.
-          </p>
-        </div>
-        <div class="advocacy-right">
+    <main class="main-project main-content">
+      <section class="project-hero">
+        <div class="project-visual">
           <img
-            class="advocacy-image"
-            src="./assets/images/Formal-Pictures/less.jpg"
-            alt="Minimal architecture"
+            src="./assets/images/projects/memory-game.png"
+            alt="Memory Game preview"
+            loading="lazy"
           />
         </div>
-      </div>
+        <div class="project-info">
+          <h1 class="project-title">Memory Game</h1>
+          <p class="project-subtitle">
+            A classic card-matching game that tests your attention and recall.
+          </p>
+          <div class="tech-stack">
+            <span class="chip">JavaScript</span>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+          </div>
+          <div class="actions">
+            <a
+              class="primary-btn"
+              href="portfolio/Memory%20Game/memory.html"
+              target="_blank"
+              rel="noopener"
+              >Play the game</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div>
+          <h3>How it was implemented</h3>
+          <p>
+            Cards are generated from a shuffled set of pairs. Clicks reveal
+            cards and a simple match check controls the game state, with subtle
+            animations for feedback.
+          </p>
+        </div>
+        <div>
+          <h3>What I learned</h3>
+          <ul>
+            <li>DOM manipulation and event handling without frameworks.</li>
+            <li>State and transitions for small interactive UIs.</li>
+            <li>Keeping logic tidy with clear function boundaries.</li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -115,6 +138,7 @@
         </a>
       </div>
     </footer>
+
     <script src="./assets/js/darkModeToggle.js"></script>
     <script src="./assets/js/menu.js"></script>
   </body>

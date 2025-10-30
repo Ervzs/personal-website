@@ -341,6 +341,24 @@ class DarkModeToggle {
                     color: #6ba3f5 !important;
                 }
 
+        /* Ensure Portfolio summary text matches other links in dark mode */
+        body.dark-mode summary.header-title {
+          color: #e0e0e0 !important;
+        }
+
+        /* Portfolio dropdown (dark mode) */
+        body.dark-mode .dropdown-menu {
+          background-color: #2d2d2d !important;
+          border-color: #404040 !important;
+        }
+        body.dark-mode .dropdown-menu a {
+          color: #e0e0e0 !important;
+        }
+        body.dark-mode .dropdown-menu a:hover {
+          background-color: #404040 !important;
+          color: #6ba3f5 !important;
+        }
+
                 /* Smooth transitions for all elements */
                 * {
                     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;

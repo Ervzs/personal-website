@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Advocy</title>
+    <title>Food Case • Project</title>
     <link rel="stylesheet" href="./assets/css/global.css" />
-    <link rel="stylesheet" href="./assets/css/advocacy.css" />
+    <link rel="stylesheet" href="./assets/css/project.css" />
   </head>
   <body>
     <header>
@@ -68,32 +68,54 @@
       </div>
     </header>
 
-    <main class="advocacy-main">
-      <div class="advocacy-content">
-        <div class="advocacy-left">
-          <h1 class="advocacy-title">LESS IS MORE</h1>
-          <p class="advocacy-text">
-            In the world of computer science and technology, simplicity is
-            power. The principle of "Less is More" reminds us that clarity,
-            efficiency, and focus often lead to the best results. In design,
-            minimalism makes interfaces clean, intuitive, and user-friendly. In
-            code, writing less—yet more efficient—lines improves readability,
-            reduces bugs, and ensures scalability. In innovation, simplicity
-            sparks creativity, helping us solve problems without unnecessary
-            complexity. By embracing Less is More, we create technology that is
-            not only functional but also elegant, sustainable, and impactful. My
-            website reflects this belief: minimal in style, but meaningful in
-            purpose.
-          </p>
-        </div>
-        <div class="advocacy-right">
+    <main class="main-project main-content">
+      <section class="project-hero">
+        <div class="project-visual">
           <img
-            class="advocacy-image"
-            src="./assets/images/Formal-Pictures/less.jpg"
-            alt="Minimal architecture"
+            src="./assets/images/projects/food-case.png"
+            alt="Food Case preview"
+            loading="lazy"
           />
         </div>
-      </div>
+        <div class="project-info">
+          <h1 class="project-title">Food Case</h1>
+          <p class="project-subtitle">
+            A mobile app that suggests nearby restaurants based on your location
+            and simple filters.
+          </p>
+          <div class="tech-stack">
+            <span class="chip">React Native</span>
+          </div>
+          <div class="actions">
+            <button
+              class="disabled-btn"
+              aria-disabled="true"
+              title="No live demo available"
+            >
+              Demo unavailable
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div>
+          <h3>How it was implemented</h3>
+          <p>
+            Location services are used to fetch nearby options and filter them
+            client-side. The UI focuses on quick scanning with minimal cards and
+            large tap targets.
+          </p>
+        </div>
+        <div>
+          <h3>What I learned</h3>
+          <ul>
+            <li>Handling permissions and geolocation on mobile.</li>
+            <li>Designing compact, readable list UIs.</li>
+            <li>Keeping navigation simple to speed up choices.</li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -115,6 +137,7 @@
         </a>
       </div>
     </footer>
+
     <script src="./assets/js/darkModeToggle.js"></script>
     <script src="./assets/js/menu.js"></script>
   </body>

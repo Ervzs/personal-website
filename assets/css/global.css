@@ -4,7 +4,8 @@ header {
   background-color: #fff;
   border-bottom: 1px solid #d9d9d9;
   box-sizing: border-box;
-  overflow: hidden;
+  /* Allow dropdowns to overflow header */
+  overflow: visible;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -15,6 +16,7 @@ header {
   font-size: 16px;
   color: #030303;
   font-family: Inter;
+  z-index: 1000; /* ensure header (and dropdown) sit above main */
 }
 .avatar-block {
   width: 139px;
@@ -70,6 +72,61 @@ header {
   align-content: flex-start;
   gap: 8px;
   color: #1e1e1e;
+}
+
+/* Portfolio dropdown (minimal, no JS) */
+.header-navigation-pill.dropdown {
+  position: relative;
+}
+.dropdown-details {
+  position: relative;
+}
+.dropdown-details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+.dropdown-details > summary::-webkit-details-marker {
+  display: none;
+}
+/* Chevron indicator for dropdown summary */
+.dropdown-details > summary.header-title::after {
+  content: "▾"; /* closed state */
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 0.9em;
+  line-height: 1;
+  vertical-align: middle;
+  color: inherit; /* match link color */
+}
+.dropdown-details[open] > summary.header-title::after {
+  content: "▴"; /* open state */
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 8px;
+  display: grid;
+  gap: 6px;
+  min-width: 220px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  z-index: 10000;
+}
+.dropdown-details:not([open]) .dropdown-menu {
+  display: none;
+}
+.dropdown-menu a {
+  text-decoration: none;
+  color: #1e1e1e;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+.dropdown-menu a:hover {
+  background: #f3f7ff;
+  color: #4a90e2;
 }
 
 .header-title {
@@ -165,6 +222,16 @@ body {
   .navigation-pill-list.active {
     display: flex;
     z-index: 9999;
+  }
+  /* Make dropdown flow in menu for mobile */
+  .navigation-pill-list .dropdown-menu {
+    position: static;
+    min-width: unset;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 8px;
+    border: 1px solid #eeeeee;
+    padding: 8px;
   }
   .hamburger {
     display: block;
