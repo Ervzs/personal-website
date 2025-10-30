@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fira Sans', sans-serif;
+  height: 100vh;
+  background: linear-gradient(20deg, #0fadbe, #fdeb86);
+  color: #d8e9ef;
+}
+
+#pomodoroContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+  border-radius: 100px;
+  border-color: #90d3ee;
+  width: 200px;
+  height: 200px;
+  color: #d8e9ef;
+  
+}
+
+#timeContainer {
+  display: flex;
+  flex-direction: row;
+  font-size: 56px;
+    color: #d8e9ef;
+}
+
+#startButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #d8e9ef;
+}
+
+#startButton:hover {
+  color: #163085;
+}
+
+h1#title{
+    margin-bottom: 0px;
+    font-size: 64px;
+}
+
+p{
+    font-size: 24px;
+}
+

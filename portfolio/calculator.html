@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+
+  <body>
+    <h1>CALCULATOR</h1>
+    <div class="calculatorContainer">
+      <div id="screen">0</div>
+      <div class="buttonContainer">
+        <div id="firstRow">
+          <button onClick="input(7)">7</button>
+          <button onClick="input(8)">8</button>
+          <button onClick="input(9)">9</button>
+          <button onClick="input('+')">+</button>
+        </div>
+
+        <div id="secondRow">
+          <button onClick="input(4)">4</button>
+          <button onClick="input(5)">5</button>
+          <button onClick="input(6)">6</button>
+          <button onClick="input('-')">-</button>
+        </div>
+
+        <div id="thirdRow">
+          <button onClick="input(1)">1</button>
+          <button onClick="input(2)">2</button>
+          <button onClick="input(3)">3</button>
+          <button onClick="input('/')">/</button>
+        </div>
+
+        <div id="fourthRow">
+          <button onClick="input(0)">0</button>
+          <button onClick="input('enter')">enter</button>
+          <button onClick="input('*')">*</button>
+        </div>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>

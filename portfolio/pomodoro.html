@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EG+Garamond:wght@400;500;600;700&family=Fira+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="pomodoro.css" />
+    <title>Pomodoro</title>
+  </head>
+  <body>
+    <h1 id="title">POMODORO</h1>
+    <p>Press start to begin</p>
+
+    <div id="pomodoroContainer">
+      <div id="timeContainer">
+        <div id="minutes">25</div>
+        :
+        <div id="seconds">00</div>
+      </div>
+      <button id="startButton" onClick="startPomodoro()">START</button>
+    </div>
+    <script src="pomodoro.js"></script>
+  </body>
+</html>
