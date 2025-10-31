@@ -143,7 +143,19 @@ class DarkModeToggle {
                 }
 
                 body.dark-mode .navigation-pill-list.active .header-title{
-                  color: black !important;
+                  color: #e0e0e0 !important;
+                }
+                /* Mobile nav panel colors in dark mode */
+                body.dark-mode .navigation-pill-list {
+                  background-color: #2d2d2d !important;
+                  box-shadow: none !important;
+                }
+                body.dark-mode .navigation-pill-list .header-title{
+                  color: #e0e0e0 !important;
+                }
+                body.dark-mode .navigation-pill-list .header-navigation-pill:hover{
+                  background-color: #404040 !important;
+                  color: #6ba3f5 !important;
                 }
 
                 /* Footer Dark Mode */
@@ -349,7 +361,14 @@ class DarkModeToggle {
         /* Portfolio dropdown (dark mode) */
         body.dark-mode .dropdown-menu {
           background-color: #2d2d2d !important;
-          border-color: #404040 !important;
+          border: none !important;
+          box-shadow: none !important;
+        }
+        /* Ensure mobile inline dropdown respects dark mode */
+        body.dark-mode .navigation-pill-list .dropdown-menu {
+          background-color: #2d2d2d !important;
+          border: none !important;
+          box-shadow: none !important;
         }
         body.dark-mode .dropdown-menu a {
           color: #e0e0e0 !important;

@@ -1,8 +1,12 @@
 header {
+  /* Header design tokens (used by nav and dropdowns) */
+  --header-bg: #fff;
+  --header-fg: #030303;
+  --header-border: #d9d9d9;
   width: 100%;
   position: relative;
-  background-color: #fff;
-  border-bottom: 1px solid #d9d9d9;
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--header-border);
   box-sizing: border-box;
   /* Allow dropdowns to overflow header */
   overflow: visible;
@@ -14,7 +18,7 @@ header {
   gap: 0px 24px;
   text-align: left;
   font-size: 16px;
-  color: #030303;
+  color: var(--header-fg);
   font-family: Inter;
   z-index: 1000; /* ensure header (and dropdown) sit above main */
 }
@@ -71,7 +75,11 @@ header {
   flex-wrap: wrap;
   align-content: flex-start;
   gap: 8px;
-  color: #1e1e1e;
+  /* Keep nav visually consistent with header */
+  color: var(--header-fg);
+  background-color: var(--header-bg);
+  border: none;
+  box-shadow: none;
 }
 
 /* Portfolio dropdown (minimal, no JS) */
@@ -105,14 +113,16 @@ header {
   position: absolute;
   top: 100%;
   right: 0;
-  background: #fff;
-  border: 1px solid #d9d9d9;
+  /* Depend on header theme */
+  background: var(--header-bg);
+  color: var(--header-fg);
+  border: none;
   border-radius: 10px;
   padding: 8px;
   display: grid;
   gap: 6px;
   min-width: 220px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: none;
   z-index: 10000;
 }
 .dropdown-details:not([open]) .dropdown-menu {
@@ -127,6 +137,25 @@ header {
 .dropdown-menu a:hover {
   background: #f3f7ff;
   color: #4a90e2;
+}
+
+/* Smooth theme transitions for header, footer, and nav to match body/main */
+header,
+footer,
+header .navigation-pill-list,
+header .dropdown-menu,
+header .dropdown-details > summary,
+header .header-navigation-pill,
+header .header-title {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Keep header/nav colors in sync in dark mode via variables */
+body.dark-mode header {
+  --header-bg: #2d2d2d;
+  --header-fg: #e0e0e0;
+  --header-border: #404040;
 }
 
 .header-title {
@@ -211,12 +240,15 @@ body {
     position: fixed;
     top: 80px;
     right: 20px;
-    background: #fff;
+    /* Follow header colors on mobile as well */
+    background: var(--header-bg);
+    color: var(--header-fg);
     flex-direction: column;
     gap: 12px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: none;
     padding: 16px 24px;
     border-radius: 12px;
+    border: none;
     z-index: 9999;
   }
   .navigation-pill-list.active {
@@ -230,7 +262,9 @@ body {
     width: 100%;
     box-shadow: none;
     border-radius: 8px;
-    border: 1px solid #eeeeee;
+    border: none;
+    background: inherit;
+    color: inherit;
     padding: 8px;
   }
   .hamburger {

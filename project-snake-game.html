@@ -111,9 +111,29 @@
         <div>
           <h3>What I learned</h3>
           <ul>
-            <li>Working with timers and keyboard events.</li>
-            <li>Implementing collision detection in a grid.</li>
-            <li>Keeping code readable with small helper functions.</li>
+            <li>
+              DOM querying trade-offs: <code>getElementById</code> vs
+              <code>querySelector</code> for clarity and flexibility.
+            </li>
+            <li>
+              Canvas 2D basics: <code>getContext("2d")</code>,
+              <code>fillStyle</code>/<code>strokeStyle</code>,
+              <code>fillRect</code>, and <code>strokeRect</code>.
+            </li>
+            <li>
+              Array utilities in gameplay loops: <code>forEach(...)</code> for
+              iteration and <code>unshift(...)</code> to grow the snake at the
+              head.
+            </li>
+            <li>
+              Generating bounded random positions (e.g., within a 0–500 grid)
+              for food placement.
+            </li>
+            <li>
+              Keyboard handling with
+              <code>window.addEventListener("keydown", ...)</code> and reading
+              <code>event.keyCode</code> to change direction.
+            </li>
           </ul>
         </div>
       </section>
